@@ -1,0 +1,131 @@
+[debug] [2021-07-23T08:29:26.995Z] ----------------------------------------------------------------------
+[debug] [2021-07-23T08:29:26.997Z] Command:       /usr/local/bin/firebase /Users/thompsonedolo/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-07-23T08:29:26.998Z] CLI Version:   9.16.0
+[debug] [2021-07-23T08:29:26.998Z] Platform:      darwin
+[debug] [2021-07-23T08:29:26.998Z] Node Version:  v12.18.1
+[debug] [2021-07-23T08:29:27.006Z] Time:          Fri Jul 23 2021 09:29:26 GMT+0100 (West Africa Standard Time)
+[debug] [2021-07-23T08:29:27.006Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-23T08:29:27.012Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-23T08:29:27.013Z] > authorizing via signed-in user (purplecipherng@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/thompsonedolo/restuarant-app/firebase
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-07-23T08:29:39.894Z] > refreshing access token with scopes: []
+[debug] [2021-07-23T08:29:39.895Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-23T08:29:49.976Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 23 Jul 2021 08:29:43 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-23T08:29:50.000Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-07-23T08:29:51.118Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-07-23T08:29:51.118Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project restuarant-app-34b59 (restuarant-app) 
+[info] 
+=== Firestore Setup
+[debug] [2021-07-23T08:29:59.834Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-23T08:29:59.834Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-23T08:30:00.974Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 23 Jul 2021 08:30:01 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-23T08:30:00.989Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/restuarant-app-34b59/services/firestore.googleapis.com  
+ 
+[debug] [2021-07-23T08:30:04.097Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 23 Jul 2021 08:30:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-23T08:30:04.098Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/restuarant-app-34b59  
+ 
+[debug] [2021-07-23T08:30:06.089Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 23 Jul 2021 08:30:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-23T08:30:06.090Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-07-23T08:30:06.090Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-23T08:30:06.090Z] > authorizing via signed-in user (purplecipherng@gmail.com)
+[debug] [2021-07-23T08:30:06.090Z] [iam] checking project restuarant-app-34b59 for permissions ["firebase.projects.get"]
+[debug] [2021-07-23T08:30:06.091Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/restuarant-app-34b59:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-23T08:30:08.556Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 23 Jul 2021 08:30:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1088","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-07-23T08:30:11.384Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/restuarant-app-34b59/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-07-23T08:30:13.146Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 23 Jul 2021 08:30:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-23T08:30:13.147Z] Found ruleset: projects/restuarant-app-34b59/rulesets/477b4f89-85e3-44a3-be88-251c4567686b
+[debug] [2021-07-23T08:30:13.147Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/restuarant-app-34b59/rulesets/477b4f89-85e3-44a3-be88-251c4567686b  
+ 
+[debug] [2021-07-23T08:30:14.570Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 23 Jul 2021 08:30:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-07-23T08:30:18.864Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/restuarant-app-34b59/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-07-23T08:30:18.865Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/restuarant-app-34b59/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-07-23T08:30:20.855Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 23 Jul 2021 08:30:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-23T08:30:21.110Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 23 Jul 2021 08:30:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-07-23T08:30:21.112Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-23T08:30:21.112Z] > authorizing via signed-in user (purplecipherng@gmail.com)
+[debug] [2021-07-23T08:30:21.112Z] [iam] checking project restuarant-app-34b59 for permissions ["firebase.projects.get"]
+[debug] [2021-07-23T08:30:21.112Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/restuarant-app-34b59:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-23T08:30:23.633Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 23 Jul 2021 08:30:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1091","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-23T08:30:23.634Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/restuarant-app-34b59/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-07-23T08:30:23.634Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/restuarant-app-34b59/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-07-23T08:30:25.886Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 23 Jul 2021 08:30:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-23T08:30:26.888Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 23 Jul 2021 08:30:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/.eslintrc.js 
+[info] ✔  Wrote functions/tsconfig.json 
+[info] ✔  Wrote functions/tsconfig.dev.json 
+[info] ✔  Wrote functions/src/index.ts 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-07-23T08:39:49.014Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-07-23T08:39:49.404Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-07-23T08:39:49.404Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.8.0","browserURL":"https://www.gstatic.com/firebasejs/8.8.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.8.0/firebase.tgz"},"live":{"version":"8.8","browserURL":"https://www.gstatic.com/firebasejs/live/8.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/8.8.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.8.0/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.8.0/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.8.0/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.8.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.8.0/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /Users/thompsonedolo/restuarant-app/firebase is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=89134636&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-07-23T08:40:13.445Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"0512962a3b07d80ff5f3","redirect_uri":"http://localhost:9005","state":"89134636"}
+[debug] [2021-07-23T08:40:14.964Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Fri, 23 Jul 2021 08:40:15 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"4a75c89e2e76078a93e9af71300fd650\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"9C08:7084:1B13C16:1E83C06:60FA806E"}
+[debug] [2021-07-23T08:40:14.978Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-07-23T08:40:15.721Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-07-23T08:40:15.721Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"verygreenboi","id":907685,"node_id":"MDQ6VXNlcjkwNzY4NQ==","avatar_url":"https://avatars.githubusercontent.com/u/907685?v=4","gravatar_id":"","url":"https://api.github.com/users/verygreenboi","html_url":"https://github.com/verygreenboi","followers_url":"https://api.github.com/users/verygreenboi/followers","following_url":"https://api.github.com/users/verygreenboi/following{/other_user}","gists_url":"https://api.github.com/users/verygreenboi/gists{/gist_id}","starred_url":"https://api.github.com/users/verygreenboi/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/verygreenboi/subscriptions","organizations_url":"https://api.github.com/users/verygreenboi/orgs","repos_url":"https://api.github.com/users/verygreenboi/repos","events_url":"https://api.github.com/users/verygreenboi/events{/privacy}","received_events_url":"https://api.github.com/users/verygreenboi/received_events","type":"User","site_admin":false,"name":"Thompson Edolo","company":null,"blog":"","location":"Nigeria","email":null,"hireable":null,"bio":"Fullstack developer","twitter_username":null,"public_repos":221,"public_gists":23,"followers":33,"following":83,"created_at":"2011-07-11T12:38:23Z","updated_at":"2021-07-23T08:40:12Z","private_gists":2,"total_private_repos":10,"owned_private_repos":10,"disk_usage":107532,"collaborators":5,"two_factor_authentication":true,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] ✔  Success! Logged into GitHub as verygreenboi 
+[info] 
